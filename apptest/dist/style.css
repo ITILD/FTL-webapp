@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-group {
+  padding: 1em;
+  margin: 1em;
+}
+
+input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.label {
+  width: 120px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 1.2em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+.label i {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 16px;
+}
+.label i,
+.label .title {
+  color: grey;
+  transition: 200ms color;
+}
+.label:hover {
+  border: 2px solid black;
+}
+.label:hover i,
+.label:hover .title {
+  color: black;
+}
