@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <title>vanilla数据处理</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/vendor/FileSaver.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js"></script> -->
+    <script src="./lib/fxparser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/upload.css">
+  </head>
+  <body>
+
+    <div class="file-reader">
+      <div class="form">
+        <label class="uploader">
+          <input type="file" id="file">
+          <span class="btn" role="button">选择文件</span>
+        </label>
+        <div class="actions">
+          <button class="btn" id="readFile" disabled>开始</button>
+        </div>
+      </div>
+      <div class="infos">
+        <p style="color: red;">分段处理</p>
+        <ul id="infos"></ul>
+        <ul id="logs"></ul>
+        <label class="progress">
+          <progress value="0" id="progress"></progress>
+          <span id="progressText"></span>
+        </label>
+      </div>
+      <div class="content">
+        <textarea id="content"></textarea>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

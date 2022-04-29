@@ -1,0 +1,141 @@
+
+  * {
+  box-sizing: border-box;
+}
+
+.file-reader {
+  max-width: 760px;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #f0f0f0;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infos, .content {
+  border-top: 1px solid #f0f0f0;
+}
+
+.infos {
+  padding: 20px;
+}
+
+.infos p {
+  margin: 0;
+}
+
+.infos ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  min-height: 200px;
+  max-height: 640px;
+  padding: 10px 20px;
+  border: none;
+  font: inherit;
+}
+
+.uploader {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.uploader input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.btn {
+  display: inline-flex;
+  line-height: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  background-color: #1890ff;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover,
+.btn:active {
+  background-color: #40a9ff;
+}
+
+.btn:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.uploader span {
+  position: relative;
+  z-index: 1;
+  padding: 10px 24px;
+}
+
+
+.form .actiions {
+  display: flex;
+  align-items: center;
+}
+
+.form .actiions > .actiion {
+  margin-left: 10px;
+}
+
+/* 进度条 */
+.progress {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.progress span {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.progress progress {
+  flex: 1;
+  height: 16px;
+  -webkit-appearance: none;
+  border-width: 0;
+  position: relative;
+  color: #43a3fb;
+}
+
+/* 底色 */
+progress::-webkit-progress-bar{
+  background-color: #e9ecef;
+  border-radius: 0;
+}
+
+progress::-webkit-progress-value {
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-size: 1rem 1rem;
+}
+
+.input {
+  line-height: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
