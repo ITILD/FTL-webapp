@@ -1,0 +1,17 @@
+{
+  "name": "EsbuildTemplate",
+  "version": "1.0.0",
+  "description": "esbuild js库模板",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node .\\tool\\build.js",
+    "build_esm_sourcemap": "esbuild index.js --bundle --format=esm --minify --sourcemap --outfile=out4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.38"
+  }
+}
