@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+      "module": "system",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outFile": "tsc.js",
+      "sourceMap": true,
+      "declaration": true, //创建声明文件
+      "declarationMap": true,
+      "inlineSources": true,//内联源码
+      "emitDeclarationOnly": true,//只创建声明文件
+  },
+  "include": [
+      "index.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}
+

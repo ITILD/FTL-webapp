@@ -1,0 +1,1 @@
+{"version":3,"file":"tsc.d.ts","sourceRoot":"","sources":["src/TemplateMore.ts","src/TemplateDefault.ts","index.ts"],"names":[],"mappings":";IAAA,MAAM,aAAa;;KAIlB;IAED,SAAS,aAAa,CAAC,MAAM,EAAE,MAAM,QAEpC;IAID,OAAO,EAAC,aAAa,EAAC,aAAa,EAAC,CAAA;;;ICZpC,MAAM,eAAe;;KAIpB;IAID,eAAe,eAAe,CAAC;;;ICR/B,OAAO,EAAC,aAAa,EAAC,aAAa,EAAC,yBAA0B;IAC9D,OAAO,EAAE,OAAO,IAAI,eAAe,EAAE,4BAA8B"}

@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import esbuild from "esbuild";
 /**
@@ -8,14 +7,14 @@ import esbuild from "esbuild";
  * https://esbuild.github.io/api/#log-level
  * 
  */
-const packageJsonData = JSON.parse(fs.readFileSync('package.json', 'utf8'))
+const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 let out = esbuild.buildSync({
-  entryPoints: [packageJsonData.main], //entryPoints: ['index.js'],
-  outfile: 'dist/' + packageJsonData.name + '.js', //outfile: 'out.js',
+  entryPoints: [packageJson.main], //entryPoints: ['index.js'] 
+  outfile: 'dist/' + packageJson.name + '.js', //outfile: 'out.js',
   sourcemap: true, //调试关联
   bundle: true, //单一文件
   minify: true, //压缩
   format: 'esm',
   logLevel: 'info', //控制台信息
+  tsconfig: 'tsconfig.json', //指定tsconfig.json
 })
-
